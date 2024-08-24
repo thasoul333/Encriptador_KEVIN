@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenge - Encriptador de texto</title>
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <img class="logo" src="a.png" alt="Logo de Alura">
+            </header>
+            <main class="main__container">
+                <form class="form">
+                    <textarea class="form__frase" id="frase" placeholder="Ingrese el texto aqui..." required></textarea>
+                    <div class="form__sugerencia">
+                        <span class="form__icon"><img src="icon.png"></span>
+                        <p class="form__parrafo">Solo letras minusculas y sin acentos.</p>
+                    </div>
+                    <div class="btn__container">
+                        <input class="btn btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+                        <input class="btn btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+                    </div>
+                </form>
+                <section class="desencriptar">
+                    <div class="desencriptar__mensaje">
+                        <img class="desencriptar__mensaje__img-figura" src="figura.png" alt="figura Ilustración">
+                        <h2 class="desencriptar__mensaje__titulo">Ningun mensaje fue encontrado.</h2>
+                        <p class="desencriptar__mensaje__parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    </div>
+                    <div class="desencriptar__resultado">
+                        <textarea class="frase-encriptada" id="frase-encriptada" readonly></textarea>
+                        <input class="btn btn-copiar" id="btn-copiar" type="button" value="Copiar">
+                        <input class="btn btn-pegar" id="btn-pegar" type="button" value="Pegar">
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="links__container">
+                    <a class="link" href="https://www.linkedin.com/in/rafael-gonzalez-montoya/" target="_blank">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a class="link" href="https://github.com/smolljordan" target="_blank">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a class="link" href="https://x.com/smolljordan" target="_blank">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
+</html>
